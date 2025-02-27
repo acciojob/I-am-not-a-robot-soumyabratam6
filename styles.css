@@ -38,3 +38,28 @@ p {
 button {
   margin: 20px;
 }
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.tile.selected {
+  border: 2px solid blue;
+}
+
+button {
+  margin: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
