@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = src;
             img.dataset.src = src;
             img.classList.add("tile");
+			if (src === "https://picsum.photos/id/237/200/300") {
+			    img.classList.add("img1");
+			} else if (src === "https://picsum.photos/seed/picsum/200/300") {
+			    img.classList.add("img2");
+			} else if (src ==="https://picsum.photos/200/300?grayscale") {
+				img.classList.add("img3");
+			} else if (src ==="https://picsum.photos/200/300/") {
+				img.classList.add("img4");
+			} else if (src === "https://picsum.photos/200/300.jpg") {
+				img.classList.add("img5");
+			}
             img.addEventListener("click", () => handleImageClick(img));
             imagesContainer.appendChild(img);
         });
